@@ -4,8 +4,49 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: lightcyan;
+		}
+		form {
+			width: 600px;
+			padding: 30px;
+			border-radius: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 100px;
+			background-color: white;
+			box-shadow: -3px 3px 5px 1px rgba(0,0,0,0.4);
+		}
+		label {
+			display: inline-block;
+			width: 150px;
+		}
+		div {
+			margin-bottom: 15px;
+		}
+	</style>
 </head>
-<body>
-	
+<body id="body">
+
+	<form>
+		<fieldset>
+			<legend>VALYUTA CONVERTER</legend>
+			<h1 id="display"></h1>
+			<div>
+				<label for="usd">1 USD narxini kiriting:</label>
+				<input value="10125" type="number" id="usd" placeholder="1 USD" required>
+			</div>
+
+			<div>
+				<label for="uzs">Summani kiriting:</label>
+				<input id="uzs" type="number" id="uzs" placeholder="UZS">
+			</div>
+			<input id="color" type="color">
+		</fieldset>
+	</form>
+	<script src="main.js"></script>
 </body>
 </html>
